@@ -1,0 +1,27 @@
+header{
+    position: fixed;
+}
+nav{
+    background: #EEEEEE;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 500;
+}
+
+#nav--teslaIcon{
+    height: 15px;
+}
+.nav--item{
+    margin: 0px 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    header{
+        visibility: hidden;
+        height: 0px;
+    }
+}

@@ -1,0 +1,120 @@
+/* Ajuste global */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+main{
+    z-index: 0;
+}
+
+:root{
+    --white: #EEEEEE;
+}
+
+#p0, #p1, #p2, #p3, #p4{
+    width: 100vw;
+    height: 100vh;
+    background: var(--white);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#p0{
+    border: solid black 2px;
+    border-radius: 2px;
+}
+.p0--description{
+    font-weight: 500;
+}
+
+#p1, #p2, #p3, #p4{
+    background-image: url(./assets/model3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    scroll-margin: 0px;
+    overflow-y: hidden;
+    height: 100vh;
+    align-items: flex-start;
+}
+#p2{
+    background-image: url(./assets/modely.jpg);
+}
+#p3{
+    background-image: url(./assets/models.jpg);
+}
+#p4{
+    background-image: url(./assets/modelx.jpg);
+}
+
+
+.p--content{
+    padding: 50px;
+    height: 300px;
+    width: 100vw;
+    background-color: var(--white);  
+    overflow-y: hidden;  
+}
+
+.p--title{
+    margin: 0px 0px 30px 0px;
+}
+
+.p--description{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.p--moreabout, .p--buy{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: #222;
+    color: white;
+}
+.p--buy{
+    background-color: greenyellow;
+    font-weight: 600;
+    color: black;
+}
+#gradient{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(34, 34, 34, 0.137),transparent);
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .p--moreabout, .p--buy{
+        width: 150px;
+    }
+    .p--content{
+        height: auto;
+    }
+    #p1{
+        background-image: url(./assets/model3profile.jpg);
+    }
+    #p2{
+        background-image: url(./assets/modelyprofile.jpg);
+    }
+    #p3{
+        background-image: url(./assets/modelsprofile.jpg);
+    }
+    #p4{
+        background-image: url(./assets/modelxprofile.jpg);
+    }
+}
